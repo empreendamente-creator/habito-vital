@@ -169,6 +169,50 @@
     margin-top:0.9rem;
   }
 
+  /* ---------- UPSELL CTA ---------- */
+  .upsell-cta{
+    margin-top:1.6rem;
+  }
+
+  .upsell-btn{
+    background:var(--gold-500);
+    color:var(--forest-950);
+    font-family:'Work Sans', sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    padding:0.95rem 1.6rem;
+    border-radius:8px;
+    border:1px solid var(--gold-500);
+    cursor:pointer;
+    width:100%;
+    max-width:400px;
+    transition:filter 0.15s ease, transform 0.15s ease;
+  }
+
+  .upsell-btn:hover{
+    filter:brightness(1.08);
+    transform:translateY(-1px);
+  }
+
+  .upsell-btn:active{
+    transform:translateY(0);
+    filter:brightness(0.97);
+  }
+
+  .upsell-decline{
+    margin-top:0.9rem;
+    cursor:pointer;
+    font-size:0.85rem;
+    font-family:'Work Sans', sans-serif;
+    text-decoration:underline;
+    color:rgba(244,239,223,0.55);
+    transition:color 0.15s ease;
+  }
+
+  .upsell-decline:hover{
+    color:rgba(244,239,223,0.85);
+  }
+
   /* ---------- WARNING BAR ---------- */
   .warning-bar{
     max-width:640px;
@@ -278,6 +322,12 @@
         </script>
       </div>
       <p class="video-caption">Áudio ligado · Não feche esta página</p>
+
+      <div style="text-align:center" id="kiwify-upsell-ne903bi" class="upsell-cta" data-upsell-url="" data-downsell-url="https://www.habitovital.com.br/DS47">
+        <button id="kiwify-upsell-trigger-ne903bi" class="upsell-btn">Sim, eu aceito essa oferta especial!</button>
+        <div id="kiwify-upsell-cancel-trigger-ne903bi" class="upsell-decline">Não, eu gostaria de recusar essa oferta</div>
+      </div>
+      <script src="https://snippets.kiwify.com/upsell/upsell.min.js"></script>
     </div>
 
     <div class="warning-bar">
