@@ -13,21 +13,17 @@
 <!-- End Google Tag Manager -->
 <style>
   :root{
-    --bg-0:#080b14;
-    --bg-1:#0d1220;
-    --card-line:#1c2436;
-    --neon:#c6ff3a;
-    --neon-dim:rgba(198,255,58,0.35);
-    --red:#ff3b3b;
-    --ink:#f4f7fa;
-    --ink-dim:#9aa5b8;
+    --bg:#ffffff;
+    --ink:#0f0f0f;
+    --ink-dim:#606060;
+    --red:#ff0000;
+    --red-dark:#cc0000;
+    --line:#e5e5e5;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
-    background:
-      radial-gradient(1100px 700px at 50% -10%, #131b30 0%, var(--bg-0) 55%),
-      var(--bg-0);
+    background:var(--bg);
     color:var(--ink);
     font-family:'Inter',system-ui,sans-serif;
     -webkit-font-smoothing:antialiased;
@@ -43,21 +39,22 @@
     position:relative;
     width:100%;
     max-width:460px;
-    border-radius:14px;
+    border-radius:12px;
     padding:0;
     background:#000;
-    border:1px solid var(--card-line);
+    border:1px solid var(--line);
+    box-shadow:0 1px 3px rgba(0,0,0,0.08);
   }
 
   .player-wrap{
-    border-radius:14px;
+    border-radius:12px;
     overflow:hidden;
     background:#000;
   }
 
   footer{
-    margin-top:40px;
-    color:#4b5468;
+    margin-top:32px;
+    color:var(--ink-dim);
     font-size:11px;
     text-align:center;
     max-width:480px;
@@ -65,7 +62,7 @@
   }
 
   :focus-visible{
-    outline:2px solid var(--neon);
+    outline:2px solid var(--red);
     outline-offset:3px;
   }
 </style>
