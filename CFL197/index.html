@@ -64,10 +64,66 @@
   :focus-visible{
     outline:2px solid var(--red);
     outline-offset:3px;
+  }  .news-header{
+    width:100%;
+    max-width:960px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 16px;
+    margin-bottom:34px;
+    border-bottom:1px solid var(--line);
+  }
+  .news-header .left,
+  .news-header .right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+  }
+  .news-header .hamburger{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+  }
+  .news-header .hamburger span{
+    width:26px;
+    height:3px;
+    background:var(--ink);
+    border-radius:1px;
+  }
+  .news-header .logo{
+    background:var(--red);
+    color:#fff;
+    font-weight:900;
+    font-size:15px;
+    line-height:1.15;
+    text-transform:uppercase;
+    padding:8px 14px;
+    letter-spacing:.01em;
+  }
+  .news-header svg{
+    width:24px;
+    height:24px;
+    stroke:var(--ink);
+    fill:none;
+    stroke-width:1.8;
   }
 </style>
 </head>
 <body>
+
+  <header class="news-header">
+    <div class="left">
+      <div class="hamburger"><span></span><span></span><span></span></div>
+      <div class="logo">Hábito<br>Vital</div>
+    </div>
+    <div class="right">
+      <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+      <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+      <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </div>
+  </header>
 
   <div class="stage" style="margin-top:12px;">
     <div class="player-wrap">
